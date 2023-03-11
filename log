@@ -55,3 +55,28 @@ Sat 11 Mar 2023 11:52:50 PM UTC:
  tests:  2|5
 total_score: 20/70
 459f42c
+Sat 11 Mar 2023 11:56:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:4: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   62 |   p.edad = edad
+      |    ^
+      |    ->
+exercises.c:62:16: error: expected ‘;’ before ‘return’
+   62 |   p.edad = edad
+      |                ^
+      |                ;
+   63 | 
+   64 |    return p;
+      |    ~~~~~~       
+exercises.c:60:14: error: variable ‘p’ set but not used [-Werror=unused-but-set-variable]
+   60 |    Persona * p = (Persona *) malloc(sizeof(Persona));
+      |              ^
+exercises.c:65:1: error: control reaches end of non-void function [-Werror=return-type]
+   65 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+0a62a23
