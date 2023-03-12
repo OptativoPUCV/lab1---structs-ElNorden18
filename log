@@ -365,3 +365,21 @@ Sun 12 Mar 2023 12:30:29 AM UTC:
  tests:  7|1
 total_score: 60/70
 0345940
+Sun 12 Mar 2023 12:37:16 AM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:131:7: error: redefinition of ‘suma1’
+  131 |   int suma1 = b1+b2;
+      |       ^~~~~
+exercises.c:130:7: note: previous definition of ‘suma1’ was here
+  130 |   int suma1 = a1+a2;
+      |       ^~~~~
+exercises.c:133:17: error: ‘suma2’ undeclared (first use in this function); did you mean ‘suma1’?
+  133 |   c->datos[1] = suma2;
+      |                 ^~~~~
+      |                 suma1
+exercises.c:133:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+e710c2c
