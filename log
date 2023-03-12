@@ -244,3 +244,13 @@ Sun 12 Mar 2023 12:05:20 AM UTC:
  tests:  3|4
 total_score: 30/70
 991ea5d
+Sun 12 Mar 2023 12:06:47 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:84:32: error: void value not ignored as it ought to be
+   84 |   if(vectorTmp == NULL) return exit(EXIT_FAILURE);
+      |                                ^~~~~~~~~~~~~~~~~~
+Compilation failed
+8702d93
