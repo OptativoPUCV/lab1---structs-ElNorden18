@@ -227,3 +227,14 @@ exercises.c:83:62: error: expected ‘,’ or ‘;’ before ‘)’ token
 cc1: all warnings being treated as errors
 Compilation failed
 2b3ca6d
+Sun 12 Mar 2023 12:04:55 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:23: error: initialization of ‘Vector *’ from incompatible pointer type ‘Persona *’ [-Werror=incompatible-pointer-types]
+   83 |   Vector *vectorTmp = (Persona *) malloc(n * sizeof(Persona));
+      |                       ^
+cc1: all warnings being treated as errors
+Compilation failed
+e15e78d
