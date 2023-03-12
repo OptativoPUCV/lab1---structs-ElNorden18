@@ -271,3 +271,14 @@ Sun 12 Mar 2023 12:09:29 AM UTC:
  tests:  3|4
 total_score: 30/70
 4455670
+Sun 12 Mar 2023 12:10:10 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:84:20: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   84 |   Vector *vectorTmp->datos = (Vector *) malloc(n * sizeof(Vector));
+      |                    ^~
+exercises.c:84:20: error: expected expression before ‘->’ token
+Compilation failed
+70710a4
