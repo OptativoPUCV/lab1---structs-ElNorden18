@@ -293,3 +293,14 @@ exercises.c:84:20: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__
 exercises.c:84:20: error: expected expression before ‘->’ token
 Compilation failed
 1b43024
+Sun 12 Mar 2023 12:10:40 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:84:21: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   84 |   *vectorTmp->datos = (int *) malloc(n * sizeof(Vector));
+      |                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+7bbe77d
